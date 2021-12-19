@@ -99,16 +99,15 @@ body {
     font-size: 1em;
     text-align: center;
     color: white;
-    height: 1000px;
-    width: 375px;
-    background: #FF7979 url('/images/bg-intro-mobile.png') left;
+    background: #FF7979 url('/images/bg-intro-mobile.png') top;
+    margin: 0;
 }
-
 
 header h2 {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 2.25rem;
+    margin-top: 88px;
 }
 
 header h3 {
@@ -117,17 +116,167 @@ header h3 {
     font-weight: 500;
 }
 
-
-.content-wrapper {
-  width: 87.2%;
-  height: 84.4%;
-  margin: 88px 24px 68px 24px;
+main {
+  margin-top: 64px;
+  margin-bottom: 68px;
+  
 }
 
+.form-description {
+  margin-bottom: 24px;
+}
+
+main p {
+  padding: 18px 66px;
+}
+
+.form {
+  margin-top: 24px;
+}
+
+.form-inputs {
+  padding: 24px 24px 16px 24px;
+}
+
+.text-inputs {
+  padding-bottom: 16px;
+}
 /*----------Header Styles----------*/
 
-.content-wrapper {
+header,
+main {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
+header .content-wrapper,
+main .content-wrapper {
+  width: 87.2%;
+  
+}
+
+/*-----------Main Styles------------*/
+
+.form-description {
+  background-color: #5E54A4;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+main p {
+  font-size: .9375em;
+  font-weight: 400;
+}
+
+main p span {
+  font-weight: 500;
+}
+
+.form {
+  background-color: white;
+}
+
+.input{
+  border: solid #DEDEDE;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden,
+ [hidden] {
+   display: none !important;
+ }
+ 
+ /*
+  * Hide only visually, but have it available for screen readers:
+  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  *
+  * 1. For long content, line feeds are not interpreted as spaces and small width
+  *    causes content to wrap 1 word per line:
+  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+  */
+ 
+ .sr-only {
+   border: 0;
+   clip: rect(0, 0, 0, 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   /* 1 */
+ }
+ 
+ /*
+  * Extends the .sr-only class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+ 
+ .sr-only.focusable:active,
+ .sr-only.focusable:focus {
+   clip: auto;
+   height: auto;
+   margin: 0;
+   overflow: visible;
+   position: static;
+   white-space: inherit;
+   width: auto;
+ }
+ 
+ /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+ 
+ .invisible {
+   visibility: hidden;
+ }
+ 
+ /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+ 
+ .clearfix::before,
+ .clearfix::after {
+   content: " ";
+   display: table;
+ }
+ 
+ .clearfix::after {
+   clear: both;
+ }
+ 
+ /* ==========================================================================
+    EXAMPLE Media Queries for Responsive Design.
+    These examples override the primary ('mobile first') styles.
+    Modify as content requires.
+    ========================================================================== */
+ 
+ @media only screen and (min-width: 768px) {
+   /* Style adjustments for viewports that meet the condition */
+ /* Tablet Styles Here */
+
+ }
+
+
+ @media only screen and (min-width: 1200px) {
+  /************ DESKTOP STYLES HERE *************/
+ }
