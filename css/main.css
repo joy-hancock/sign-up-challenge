@@ -101,86 +101,171 @@ body {
     color: white;
     background: #FF7979 url('/images/bg-intro-mobile.png') top;
     margin: 0;
+    
+}
+
+
+header,
+main
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {
+  width: 87.2%;
+ 
+}
+
+header .content-wrapper {
+  margin-top: 88px;
 }
 
 header h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 2.25rem;
-    margin-top: 88px;
-}
-
-header h3 {
-    font-size: 1em;
-    line-height: 1.625em;
-    font-weight: 500;
-}
-
-main {
-  margin-top: 64px;
-  margin-bottom: 68px;
+  margin: 0;
   
 }
+
+header p{
+  padding-top: 16px;
+  margin: 0;
+}
+
+
+main .content-wrapper {
+  margin: 64px 0 0 0;
+ }
 
 .form-description {
   margin-bottom: 24px;
 }
 
-main p {
-  padding: 18px 66px;
+.form-description p {
+  margin: 1.125em 4.125em;
 }
 
-.form {
-  margin-top: 24px;
+aside .form {
+  padding: 24px;
+ 
 }
 
-.form-inputs {
-  padding: 24px 24px 16px 24px;
+
+input[type = "text" i] {
+  margin-bottom: 16px;
+  padding:15px 0;
+  padding-left: 19.41px;
 }
 
-.text-inputs {
-  padding-bottom: 16px;
+input[type="button"] {
+  margin-bottom: 16px;
+  padding: 15px 0  15px 19.41px;
+  
+  
+}
+
+footer {
+  margin: 0 24px;
 }
 /*----------Header Styles----------*/
 
-header,
-main {
+header .content-wrapper {
+  height: 38.46%;
+}
+
+header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+
+}
+
+header p {
+  font-weight: 500;
+  line-height: 1.7em;
+}
+/*-----------Main Styles------------*/
+
+
+main h3 {
+  font-size: 1em;
+  line-height: 1.625em;
+  font-weight: 500;
+}
+
+aside {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+aside .content-wrapper{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-header .content-wrapper,
-main .content-wrapper {
-  width: 87.2%;
-  
-}
-
-/*-----------Main Styles------------*/
-
 .form-description {
   background-color: #5E54A4;
-  border-radius: 4px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+  filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
 }
 
-main p {
+.form-description p {
   font-size: .9375em;
   font-weight: 400;
+  line-height: 1.625em;
 }
 
-main p span {
-  font-weight: 500;
+.form-description p span {
+  font-weight: 700;
 }
 
 .form {
   background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  justify-content: center;
+  filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
+
 }
 
-.input{
+input {
   border: solid #DEDEDE;
-  border-radius: 4px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #3d3b48;
+  font-size: 0.875em;
+  
 }
+
+
+input[type="button" i] {
+  background-color: #38CC8B;
+  border-radius: 5px;
+  border: none;
+  text-transform:uppercase;
+  color: white;
+  font-weight: 600;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+}
+
+.terms-conditions p{
+  font-size: .6875em;
+  color: #BAB7D4;
+  line-height: 1.3125em;
+  font-weight: 500;
+}
+
+.terms-conditions p span {
+  color: #FF7979;
+  font-weight: 700;
+}
+
+
 
 /* ==========================================================================
    Helper classes
