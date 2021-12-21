@@ -140,6 +140,7 @@ main .content-wrapper {
 
 .form-description {
   margin-bottom: 24px;
+  width:100%;
 }
 
 .form-description p {
@@ -148,6 +149,7 @@ main .content-wrapper {
 
 aside .form {
   padding: 24px;
+  width:100%;
  
 }
 
@@ -239,6 +241,7 @@ input {
   box-sizing: border-box;
   color: #3d3b48;
   font-size: 0.875em;
+  font-weight: 600;
   
 }
 
@@ -359,9 +362,94 @@ input[type="button" i] {
    /* Style adjustments for viewports that meet the condition */
  /* Tablet Styles Here */
 
+
+
  }
 
 
  @media only screen and (min-width: 1200px) {
   /************ DESKTOP STYLES HERE *************/
- }
+
+body {
+  
+  background: #FF7979 url('/images/bg-intro-desktop.png') cover no-repeat;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin-bottom:0;
+  
+  
+}
+
+header .content-wrapper {
+  margin: 290px 45px 290px 165px;
+}
+
+header p {
+  padding-top: 11px;
+}
+
+main .content-wrapper {
+  margin: 121px 165px 121px 45px;
+}
+
+.form-description p {
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+
+  /************** GENERAL STYLES *************/
+ 
+
+  .header-main-wrapper {
+    display: flex;
+    margin-bottom: 0;
+  
+  }
+  
+
+/************* HEADER STYLES *************/
+header {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+header h2 {
+  font-size: 3.125rem;
+  line-height: 3.4375rem;
+  font-weight: 700;
+}
+
+
+/************* MAIN STYLES *************/
+
+
+main .content-wrapper {
+
+  justify-content: flex-end;
+}
+
+aside .form {
+  padding: 40px;
+}
+
+
+
+.form-description p span {
+  font-weight: 500;
+}
+
+input[type = "text" i] {
+  padding-left: 32px;
+}
+
+/************* FOOTER STYLES *************/
+footer {
+  flex-direction: column;
+}
+  
+}
+
+  
