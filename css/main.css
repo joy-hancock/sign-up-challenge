@@ -100,131 +100,104 @@ body {
     text-align: center;
     color: white;
     background: #FF7979 url('/images/bg-intro-mobile.png') top;
-    margin: 0;
+    
     
 }
 
-
-header,
-main
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 .content-wrapper {
-  width: 87.2%;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
  
 }
 
-header .content-wrapper {
-  margin-top: 88px;
+
+
+/*================== Header/Footer Base Styles ==============*/
+
+.hero-area, 
+footer {
+  display:flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-header h2 {
-  margin: 0;
+/*================ Hero Styles ===============*/
+
+
+.hero-area .content-wrapper {
+  width: 100%;
+  height: 22.6%;
+  margin:88px 24px 64px 24px;
+}
+
+.hero-area h2 {
+  line-height: 2.25rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  vertical-align: top;
+  height: 80px;
+  margin:0;
   
 }
 
-header p{
-  padding-top: 16px;
-  margin: 0;
+
+.hero-area p{
+  margin: 16px 0 0 0;
+  font-weight: 500;
+  line-height: 1.625em;
+  vertical-align: top;
 }
 
 
-main .content-wrapper {
-  margin: 64px 0 0 0;
- }
+
+
+
+/*================ Main Styles ================*/
+
+aside .content-wrapper {
+ 
+  padding: 0 24px;
+}
+
+
+
+
+
+
+ aside p {
+  font-size: 0.9375em;
+  line-height: 1.625em;
+  font-weight: 500;
+  vertical-align: top;
+}
+
+
 
 .form-description {
   margin-bottom: 24px;
   width:100%;
-}
-
-.form-description p {
-  margin: 1.125em 4.125em;
-}
-
-aside .form {
-  padding: 24px;
-  width:100%;
- 
-}
-
-
-input[type = "text" i] {
-  margin-bottom: 16px;
-  padding:15px 0;
-  padding-left: 19.41px;
-}
-
-input[type="button"] {
-  margin-bottom: 16px;
-  padding: 15px 0  15px 19.41px;
-  
-  
-}
-
-footer {
-  margin: 0 24px;
-}
-/*----------Header Styles----------*/
-
-header .content-wrapper {
-  height: 38.46%;
-}
-
-header h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  line-height: 2.25rem;
-
-}
-
-header p {
-  font-weight: 500;
-  line-height: 1.7em;
-}
-/*-----------Main Styles------------*/
-
-
-main h3 {
-  font-size: 1em;
-  line-height: 1.625em;
-  font-weight: 500;
-}
-
-aside {
-  display:flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-aside .content-wrapper{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.form-description {
+  height: 15.88%;
   background-color: #5E54A4;
   border-radius: 10px;
   filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
 }
 
 .form-description p {
+  margin: 18px 66.5px;
   font-size: .9375em;
   font-weight: 400;
-  line-height: 1.625em;
+  line-height: 1.734em;
+  vertical-align: top;
+  height: 59.09%;
 }
 
-.form-description p span {
-  font-weight: 700;
-}
 
-.form {
+
+aside .form {
+  padding: 24px;
+  width:100%;
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -234,6 +207,32 @@ aside .content-wrapper{
   filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
 
 }
+ 
+
+  
+
+input[type = "text" ] {
+  margin-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 19.41px;
+  border: solid #dedede 1px;
+  font-size: 14px;
+  font-weight:600;
+  line-height: 1.72em;
+}
+
+input[type="button"] {
+  margin-bottom: 8px;
+  padding: 15px 0  15px 19.41px;
+  
+  
+}
+
+
+
+
+
 
 input {
   border: solid #DEDEDE;
@@ -254,21 +253,43 @@ input[type="button" i] {
   color: white;
   font-weight: 600;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  padding: 15px 45px;
+  font-size: 0.9375em;
+  line-height: 1.734em;
 }
+
 
 .terms-conditions p{
   font-size: .6875em;
   color: #BAB7D4;
-  line-height: 1.3125em;
+  line-height: 1.76em;
   font-weight: 500;
+  margin: 0;
+  padding: 0 24px;
+  height: 42px;
+  
 }
 
 .terms-conditions p span {
   color: #FF7979;
-  font-weight: 700;
+  font-weight:700;
+ 
+  
 }
 
+/***************FOOTER STYLES***************/
+footer {
+  flex-direction: column;
+  text-align: center;
+  margin: 16px 0;
+}
 
+footer p {
+  margin: 0;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  
+}
 
 /* ==========================================================================
    Helper classes
@@ -372,63 +393,66 @@ input[type="button" i] {
 
 body {
   
-  background: #FF7979 url('/images/bg-intro-desktop.png') cover no-repeat;
+  background: #FF7979 url('/images/bg-intro-desktop.png');
 }
 
-.content-wrapper {
-  max-width: 1000px;
-  margin-bottom:0;
-  
-  
-}
 
-header .content-wrapper {
-  margin: 290px 45px 290px 165px;
-}
-
-header p {
-  padding-top: 11px;
-}
-
-main .content-wrapper {
-  margin: 121px 165px 121px 45px;
-}
-
-.form-description p {
-  margin-right: 4rem;
-  margin-left: 4rem;
-}
 
 
   /************** GENERAL STYLES *************/
- 
 
-  .header-main-wrapper {
-    display: flex;
-    margin-bottom: 0;
-  
-  }
-  
-
-/************* HEADER STYLES *************/
-header {
-  justify-content: flex-start;
-  text-align: left;
-}
-
-header h2 {
-  font-size: 3.125rem;
-  line-height: 3.4375rem;
-  font-weight: 700;
-}
 
 
 /************* MAIN STYLES *************/
 
+.content-wrapper {
+  
+  margin:0;
+}
 
-main .content-wrapper {
 
-  justify-content: flex-end;
+.hero-area {
+  width: 36.459%;
+  text-align:left;
+  height: auto;
+ margin-right:45px;
+}
+
+.hero-area .content-wrapper {
+  margin: 0;
+  height: 27.5%;
+}
+
+.hero-area h2 {
+  font-size: 3.125em;
+  line-height:3.929rem;
+height: 59.38%;
+  font-weight: 700;
+  vertical-align: top;
+
+}
+
+.hero-area p{
+  margin:0;
+  font-size:1em;
+  line-height: 1.613em;
+  padding-top:11px;
+}
+
+
+
+
+
+
+aside {
+  width:37.5%;
+  margin: 121px 0;
+ 
+  
+}
+
+aside .content-wrapper {
+  padding:0;
 }
 
 aside .form {
@@ -436,18 +460,26 @@ aside .form {
 }
 
 
+.form-description p {
+  margin: 17px 110px;
+}
 
 .form-description p span {
   font-weight: 500;
 }
 
-input[type = "text" i] {
+aside .form input[type = "text" i] {
   padding-left: 32px;
+}
+
+.terms-conditions {
+  padding:0;
+  height:26px;
 }
 
 /************* FOOTER STYLES *************/
 footer {
-  flex-direction: column;
+  display: block;
 }
   
 }

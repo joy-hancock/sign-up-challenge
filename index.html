@@ -8,6 +8,9 @@
   
   
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
@@ -16,52 +19,68 @@
  
 </head>
 <body>
-<!-----Header Section----->
-<div class = "header-main-wrapper">
-<header>
+<main> 
   <div class="content-wrapper">
-    <h2>Learn to code by watching others</h2>
-
-    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-      but understanding how developers think is invaluable. </p>
-  </div>
-  
-</header>
-
-<!----------Main Section----------->
-<main>
-
-<!----------Form----------->
-  <aside>
+<!-- Hero Area -->
+  <section class="hero-area">
     <div class="content-wrapper">
+      <h2>Learn to code by watching others</h2>
+
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+  </section>
+
+<!-- Form -->
+
+  <aside>
     
+    <div class="content-wrapper">
       <div class="form-description">
         <p> <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
       </div> 
+      
       <div class="form">
-        <input type="text" name="first-name" value="First Name"> 
-        <input type="text" name="last-name" value="Last Name"> 
-        <input type="text" name="email-address" value="Email Address"> 
-        <input type="text" name="password" value="Password"> 
-        <input type = "button" value="Claim your free trial"> 
+        
+          <input type="text" name="first-name" value="First Name"> 
+          <input type="text" name="last-name" value="Last Name"> 
+          <input type="text" name="email-address" value="Email Address"> 
+          <input type="text" name="password" value="Password"> 
+          <input type = "button" value="Claim your free trial"> 
+        
         <div class = "terms-conditions">
           <p> By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </div>
+      
       </div> 
+      
     </div>
-  <!--Aside content wrapper ends---->
+ <!-- Aside content wrapper ends -->
   </aside>
+
 </main>
 </div>
-<!-----Footer Area ------->
+<!-- Footer Area -->
   
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Joy Hancock</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br> 
+      Coded by <a href="#">Joy Hancock</a>
     </p>
   </footer>
 
+   
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
+
 </html>
+
