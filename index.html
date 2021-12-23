@@ -18,7 +18,9 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
  
 </head>
+
 <body>
+  
 <main> 
   <div class="content-wrapper">
 <!-- Hero Area -->
@@ -35,31 +37,50 @@
   <aside>
     
     <div class="content-wrapper">
+     
       <div class="form-description">
         <p> <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
       </div> 
       
-      <div class="form">
-        
-          <input type="text" name="first-name" value="First Name"> 
-          <input type="text" name="last-name" value="Last Name"> 
-          <input type="text" name="email-address" value="Email Address"> 
-          <input type="text" name="password" value="Password"> 
-          <input type = "button" value="Claim your free trial"> 
-        
+      
+        <form action="index.html" method="post" id="claim-form">
+          <div class =
+          form-field">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name"> 
+          <small></small>
+        </div>
+        <div class="form-field">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name"> 
+          <small></small>
+        </div>
+        <div class="form-field">
+          <label for="email-address">Email Address</label>
+          <input type="text" name="email-address" id="email-address"> 
+          <small></small>
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password"> 
+          <small></small>
+        </div>
+        <div class="form-field">
+          <button type="submit" class="full">Claim your tree trial</button>> 
+        </div>
         <div class = "terms-conditions">
           <p> By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </div>
       
       </div> 
-      
+      </form>
     </div>
  <!-- Aside content wrapper ends -->
-  </aside>
+</aside>
 
 </main>
-</div>
+
 <!-- Footer Area -->
   
   <footer>
@@ -70,9 +91,7 @@
   </footer>
 
    
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+ 
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -80,6 +99,9 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <!-- JavaScript Link -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -166,12 +166,6 @@ aside .content-wrapper {
 
 
 
- aside p {
-  font-size: 0.9375em;
-  line-height: 1.625em;
-  font-weight: 500;
-  vertical-align: top;
-}
 
 
 
@@ -209,9 +203,9 @@ aside .form {
 }
  
 
-  
 
-input[type = "text" ] {
+
+.form-field input {
   margin-bottom: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -234,18 +228,41 @@ input[type="button"] {
 
 
 
-input {
+.form-fieldinput {
   border: solid #DEDEDE;
   border-radius: 5px;
   box-sizing: border-box;
   color: #3d3b48;
   font-size: 0.875em;
   font-weight: 600;
-  
 }
 
+  .form-field label {
+    font-size: 0.9375em;
+    line-height: 1.625em;
+    font-weight: 500;
+    vertical-align: top;
+  }
+  
+.form-field input:focus {
+  border-color: var(--error-color);
+}
 
-input[type="button" i] {
+.form-field.error input {
+  border-color: var(--error-color);
+}
+
+.form-field.success input {
+  border-color: var(--success-color);
+}
+
+.form-field small {
+  color: var(--error-color);
+}
+
+/* button */
+
+.btn {
   background-color: #38CC8B;
   border-radius: 5px;
   border: none;
@@ -256,6 +273,16 @@ input[type="button" i] {
   padding: 15px 45px;
   font-size: 0.9375em;
   line-height: 1.734em;
+}
+
+
+.btn:hover {
+  background-color: #77E2B3;
+
+}
+
+.btn:focus {
+  outline: none;
 }
 
 
