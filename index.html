@@ -44,37 +44,27 @@
       </div> 
       
       
-        <form action="index.html" method="post" id="claim-form">
-          <div class =
-          form-field">
-          <label for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name"> 
-          <small></small>
+      <form name="userForm" onsubmit="return validateForm()" method="post">
+       <div class="form-field">
+          <input type = "text" name="firstname" placeholder = "First Name">   
+          <div class="error" id="firstErr"></div>
         </div>
         <div class="form-field">
-          <label for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name"> 
-          <small></small>
+          <input type = "text" name = "lastname" placeholder="Last Name"> 
+          <div class="error" id="lastErr"></div>
         </div>
         <div class="form-field">
-          <label for="email-address">Email Address</label>
-          <input type="text" name="email-address" id="email-address"> 
-          <small></small>
+          <input type = "text" name="email" placeholder="Email"> 
+          <div class="error" id="emailErr"></div>
         </div>
         <div class="form-field">
-          <label for="password">Password</label>
-          <input type="text" name="password" id="password"> 
-          <small></small>
+          <input type = "text" name="password" placeholder= "Password">
+          <div class="error" id="passwordErr"></div>
         </div>
         <div class="form-field">
-          <button type="submit" class="full">Claim your tree trial</button>> 
+          <input type ="submit" value = "submit">
         </div>
-        <div class = "terms-conditions">
-          <p> By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-        </div>
-      
-      </div> 
-      </form>
+       </form>
     </div>
  <!-- Aside content wrapper ends -->
 </aside>

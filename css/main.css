@@ -162,13 +162,6 @@ aside .content-wrapper {
 }
 
 
-
-
-
-
-
-
-
 .form-description {
   margin-bottom: 24px;
   width:100%;
@@ -189,7 +182,7 @@ aside .content-wrapper {
 
 
 
-aside .form {
+.form {
   padding: 24px;
   width:100%;
   background-color: white;
@@ -201,35 +194,15 @@ aside .form {
   filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
 
 }
- 
 
 
-
-.form-field input {
+.form label {
   margin-bottom: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 19.41px;
   border: solid #dedede 1px;
-  font-size: 14px;
-  font-weight:600;
-  line-height: 1.72em;
-}
-
-input[type="button"] {
-  margin-bottom: 8px;
-  padding: 15px 0  15px 19.41px;
-  
-  
-}
-
-
-
-
-
-
-.form-fieldinput {
-  border: solid #DEDEDE;
+  vertical-align: top;
   border-radius: 5px;
   box-sizing: border-box;
   color: #3d3b48;
@@ -237,53 +210,51 @@ input[type="button"] {
   font-weight: 600;
 }
 
-  .form-field label {
+input {
+  text-align: left;
+  font-size: .9375em;
+  line-height: 1.625em;
+  font-weight: 400;
+  font-size: .6875em
+}
+
+.submit {
+  margin-bottom: 8px;
+    background-color: #38CC8B;
+    border-radius: 5px;
+    border: none;
+    text-transform:uppercase;
+    color: white;
+    font-weight: 600;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    padding: 15px 45px;
     font-size: 0.9375em;
-    line-height: 1.625em;
-    font-weight: 500;
-    vertical-align: top;
+    line-height: 1.734em;
   }
+
+.submit:hover {
+  background-color: #77E2B3;
+}
+
+.message {
+  text-align: right;
+  color: red;
+  font-weight: 500;
+  font-size: .6875em;
+}
+
   
-.form-field input:focus {
-  border-color: var(--error-color);
+.hide {
+  display:none;
 }
 
-.form-field.error input {
-  border-color: var(--error-color);
-}
 
-.form-field.success input {
-  border-color: var(--success-color);
-}
-
-.form-field small {
-  color: var(--error-color);
-}
 
 /* button */
 
-.btn {
-  background-color: #38CC8B;
-  border-radius: 5px;
-  border: none;
-  text-transform:uppercase;
-  color: white;
-  font-weight: 600;
-  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
-  padding: 15px 45px;
-  font-size: 0.9375em;
-  line-height: 1.734em;
-}
 
 
-.btn:hover {
-  background-color: #77E2B3;
 
-}
-
-.btn:focus {
-  outline: none;
-}
 
 
 .terms-conditions p{
