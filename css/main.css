@@ -91,22 +91,19 @@
 /* Global Styles */
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 
 * {
   box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    color: white;
-    background: #FF7979 url('/images/bg-intro-mobile.png') top;
-
-
+  background: #FF7979 url('/images/bg-intro-mobile.png') top;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  text-align: center;
 }
 
 .hide {
@@ -114,90 +111,77 @@ body {
 }
 
 .content-wrapper {
+  align-items: flex-start;
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: flex-start;
-
 }
 
-
-
-/*================== Header/Footer Base Styles ==============*/
+/*================== Hero/Footer Base Styles ==============*/
 
 .hero-area,
 footer {
+  align-items: center;
   display:flex;
   flex-flow: row wrap;
-  align-items: center;
   justify-content: center;
 }
 
 /*================ Hero Styles ===============*/
 
-
 .hero-area .content-wrapper {
-  width: 100%;
   height: 22.6%;
   margin:88px 24px 64px 24px;
+  width: 100%;
 }
 
 .hero-area h2 {
-  line-height: 2.25rem;
   font-size: 1.75rem;
   font-weight: 700;
-  vertical-align: top;
   height: 80px;
+  line-height: 2.25rem;
   margin:0;
-
+  vertical-align: top;
 }
-
 
 .hero-area p{
-  margin: 16px 0 0 0;
   font-weight: 500;
   line-height: 1.625em;
+  margin: 16px 0 0 0;
   vertical-align: top;
 }
 
-
-
-
-
-/*================ Main Styles ================*/
-
+/*================ Form Styles ================*/
 
 .form-wrapper {
-  width:100%;
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   height: 69.75%;
-
+  width:100%;
 }
 
 .form-description {
-
-  height: 15.88%;
   background-color: #5E54A4;
   border-radius: 10px;
   filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
+  height: 15.88%;
   margin:0 24px;
   width: 100%;
 }
 
 .form-description p {
-  margin: 18px 66.5px;
   font-size: .9375em;
   font-weight: 400;
-  line-height: 1.734em;
-  vertical-align: top;
   height: 59.09%;
+  line-height: 1.734em;
+  margin: 18px 66.5px;
+  vertical-align: top;
 }
 
 .form-description p span {
-  font-weight: 500;
   color:white;
+  font-weight: 500;
 }
 
 #userform {
@@ -206,16 +190,15 @@ footer {
 }
 
 form {
-  padding: 24px;
-  width: 100%;
+  align-items: stretch;
   background-color: white;
   border-radius: 10px;
   display: flex;
-  flex-flow: column wrap;
-  align-items: stretch;
-  justify-content: center;
   filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
-
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 24px;
+  width: 100%;
 }
 
 .field-wrapper {
@@ -223,22 +206,20 @@ form {
 }
 
 .input-field {
-  width: 100%;
   border: 1px solid #DEDEDE;
   display: flex;
-
-
+  width: 100%;
 }
 
 .input-field input {
-  text-align: left;
-  font-size: .9375em;
-  line-height: 1.6em;
-  font-weight: 600;
   border: none;
-  padding: 15px 0 15px 19.41px;
-  width: 100%;
   display:inline;
+  font-size: .9375em;
+  font-weight: 600;
+  line-height: 1.6em;
+  padding: 15px 0 15px 19.41px;
+  text-align: left;
+  width: 100%;
 }
 
 input email:invalid {
@@ -247,28 +228,23 @@ input email:invalid {
 
 .input-field img {
   height: 24px;
-  width: 24px;
   margin: 15px 16px 15px 0;
+  width: 24px;
 }
-
-
 
 #firstmessage,
 #lastmessage,
 #emailmessage,
 #passwordmessage {
   color:#FF7979;
-  font-size: 0.702em;
   display:flex;
-  justify-content:flex-end;
+  font-size: 0.702em;
   font-weight: 500;
+  justify-content:flex-end;
   line-height: 1.51em;
-
 }
 
-
 /* button */
-
 .button-wrapper {
   display:flex;
   flex-flow: row wrap;
@@ -276,64 +252,55 @@ input email:invalid {
 
 .submit {
   margin-bottom: 8px;
-    background-color: #38CC8B;
-    border-radius: 5px;
-    border: none;
-    text-transform:uppercase;
-    color: white;
-    font-weight: 600;
-    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
-    padding: 15px 45px;
-    font-size: 0.9375em;
-    line-height: 1.734em;
-    cursor: pointer;
-  width: 100%;
+  background-color: #38CC8B;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  color: white;
+  cursor: pointer;
   display: flex;
+  font-size: 0.9375em;
+  font-weight: 600;
   justify-content: center;
-  }
-
-
+  line-height: 1.734em;
+  padding: 15px 45px;
+  text-transform:uppercase;
+  width: 100%;
+}
 
 .submit:hover {
   background-color: #77E2B3;
 }
 
-
 .terms-services {
-  height: 42px;
   align-items: center;
+  height: 42px;
   margin: 0 15px;
 }
 
 .terms-services p{
-  font-size: .6875em;
   color: #BAB7D4;
-  line-height: 1.76em;
+  font-size: .6875em;
   font-weight: 500;
+  line-height: 1.76em;
   margin: 0;
-
-
 }
 
 .terms-services p span {
   color: #FF7979;
   font-weight:700;
-
-
 }
 
 /***************FOOTER STYLES***************/
+
 footer {
-
   text-align: center;
-
 }
 
 footer p {
-  margin: 0;
   font-size: 0.75em;
   line-height: 1.5em;
-
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -437,64 +404,48 @@ footer p {
   /************ DESKTOP STYLES HERE *************/
 
 body {
-
   background: #FF7979 url('/images/bg-intro-desktop.png');
 }
-
-
-
 
   /************** GENERAL STYLES *************/
 
 .content-wrapper {
   align-items:center;
-
 }
 
 /************* MAIN STYLES *************/
 
-
-
-
 .hero-area {
-  width: 36.459%;
-  text-align:left;
   height: auto;
   margin-right:45px;
+  text-align:left;
+  width: 36.459%;
 }
 
 .hero-area .content-wrapper {
-  margin: 0;
   height: 27.5%;
+  margin: 0;
 }
 
 .hero-area h2 {
   font-size: 3.125em;
-  line-height:3.929rem;
-  height: 131px;
   font-weight: 700;
+  height: 131px;
+  line-height:3.929rem;
   vertical-align: top;
-
 }
 
 .hero-area p{
   font-size:1em;
+  height: 78px;
   line-height: 1.72em;
   margin:11px 0 0 0;
-  height: 78px;
 }
-
-
-
-
-
 
 .form-wrapper {
   width:37.5%;
   margin: 121px 0;
   padding:0;
-
-
 }
 
 .form-description {
@@ -509,15 +460,13 @@ body {
 }
 
 #userform {
-  padding:40px;
   margin: 0;
+  padding:40px;
 }
 
 .field-wrapper {
   margin-bottom: 19px;
 }
-
-
 
 .input-field input {
   line-height: 1.6em;
@@ -526,11 +475,11 @@ body {
 
 
 .terms-services {
-  padding:0;
+  align-items: center;
+  display:flex;
   height:26px;
   margin: 0 45.5px;
-  display:flex;
-  align-items: center;
+  padding:0;
 }
 
 /************* FOOTER STYLES *************/
