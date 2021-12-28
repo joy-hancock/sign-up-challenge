@@ -171,6 +171,8 @@ footer {
   width:100%;
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  height: 69.75%;
 
 }
 
@@ -181,6 +183,7 @@ footer {
   border-radius: 10px;
   filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
   margin:0 24px;
+  width: 100%;
 }
 
 .form-description p {
@@ -215,13 +218,15 @@ form {
 
 }
 
+.field-wrapper {
+  margin-bottom: 16px;
+}
 
 .input-field {
-  display: flex;
   width: 100%;
-  margin-bottom: 16px;
   border: 1px solid #DEDEDE;
-  justify-content: space-between;
+  display: flex;
+
 
 }
 
@@ -232,24 +237,43 @@ form {
   font-weight: 600;
   border: none;
   padding: 15px 0 15px 19.41px;
+  width: 100%;
+  display:inline;
+}
+
+input email:invalid {
+  color: #FF7979";
 }
 
 .input-field img {
   height: 24px;
   width: 24px;
+  margin: 15px 16px 15px 0;
 }
 
 
 
-span {
-  text-align: right;
+#firstmessage,
+#lastmessage,
+#emailmessage,
+#passwordmessage {
   color:#FF7979;
-  margin-top:0;
+  font-size: 0.702em;
+  display:flex;
+  justify-content:flex-end;
+  font-weight: 500;
+  line-height: 1.51em;
 
 }
 
 
 /* button */
+
+.button-wrapper {
+  display:flex;
+  flex-flow: row wrap;
+}
+
 .submit {
   margin-bottom: 8px;
     background-color: #38CC8B;
@@ -263,6 +287,9 @@ span {
     font-size: 0.9375em;
     line-height: 1.734em;
     cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   }
 
 
@@ -272,14 +299,19 @@ span {
 }
 
 
+.terms-services {
+  height: 42px;
+  align-items: center;
+  margin: 0 15px;
+}
+
 .terms-services p{
   font-size: .6875em;
   color: #BAB7D4;
   line-height: 1.76em;
   font-weight: 500;
   margin: 0;
-  padding: 0 24px;
-  height: 42px;
+
 
 }
 
@@ -416,6 +448,7 @@ body {
 
 .content-wrapper {
   align-items:center;
+
 }
 
 /************* MAIN STYLES *************/
@@ -438,17 +471,17 @@ body {
 .hero-area h2 {
   font-size: 3.125em;
   line-height:3.929rem;
-  height: 59.38%;
+  height: 131px;
   font-weight: 700;
   vertical-align: top;
 
 }
 
 .hero-area p{
-  margin:0;
   font-size:1em;
-  line-height: 1.613em;
-  padding-top:11px;
+  line-height: 1.72em;
+  margin:11px 0 0 0;
+  height: 78px;
 }
 
 
@@ -464,10 +497,11 @@ body {
 
 }
 
-
+.form-description {
+  margin: 0 0 24px 0;
+}
 .form-description p {
-  padding: 17px 0;
-  font-size: 0.9em;
+  margin: 17px 0;
 }
 
 .form-description p span {
@@ -476,11 +510,14 @@ body {
 
 #userform {
   padding:40px;
+  margin: 0;
 }
 
-.input-field {
-  margin-bottom: 20px;
+.field-wrapper {
+  margin-bottom: 19px;
 }
+
+
 
 .input-field input {
   line-height: 1.6em;
@@ -491,6 +528,9 @@ body {
 .terms-services {
   padding:0;
   height:26px;
+  margin: 0 45.5px;
+  display:flex;
+  align-items: center;
 }
 
 /************* FOOTER STYLES *************/
