@@ -16,7 +16,7 @@
     font-size: 1em;
     line-height: 1.4;
   }
-  
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -26,21 +26,21 @@
    *
    * Customize the background color to match your design.
    */
-  
+
   ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   ::selection {
     background: #b3d4fc;
     text-shadow: none;
   }
-  
+
   /*
    * A better looking default horizontal rule
    */
-  
+
   hr {
     display: block;
     height: 1px;
@@ -49,13 +49,13 @@
     margin: 1em 0;
     padding: 0;
   }
-  
+
   /*
    * Remove the gap between audio, canvas, iframes,
    * images, videos and the bottom of their containers:
    * https://github.com/h5bp/html5-boilerplate/issues/440
    */
-  
+
   audio,
   canvas,
   iframe,
@@ -64,21 +64,21 @@
   video {
     vertical-align: middle;
   }
-  
+
   /*
    * Remove default fieldset styles.
    */
-  
+
   fieldset {
     border: 0;
     margin: 0;
     padding: 0;
   }
-  
+
   /*
    * Allow only vertical resizing of textareas.
    */
-  
+
   textarea {
     resize: vertical;
   }
@@ -94,28 +94,38 @@ html {
     font-size: 16px;
 }
 
+
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1em;
     text-align: center;
     color: white;
     background: #FF7979 url('/images/bg-intro-mobile.png') top;
-    
-    
+
+
+}
+
+.hide {
+  display:none;
 }
 
 .content-wrapper {
   display:flex;
   flex-flow: row wrap;
   justify-content: center;
- 
+  align-items: flex-start;
+
 }
 
 
 
 /*================== Header/Footer Base Styles ==============*/
 
-.hero-area, 
+.hero-area,
 footer {
   display:flex;
   flex-flow: row wrap;
@@ -139,7 +149,7 @@ footer {
   vertical-align: top;
   height: 80px;
   margin:0;
-  
+
 }
 
 
@@ -156,19 +166,21 @@ footer {
 
 /*================ Main Styles ================*/
 
-aside .content-wrapper {
- 
-  padding: 0 24px;
+
+.form-wrapper {
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+
 }
 
-
 .form-description {
-  margin-bottom: 24px;
-  width:100%;
+
   height: 15.88%;
   background-color: #5E54A4;
   border-radius: 10px;
   filter: drop-shadow(0px 8px 0px rgba(0, 0, 0, 0.14688));
+  margin:0 24px;
 }
 
 .form-description p {
@@ -180,11 +192,19 @@ aside .content-wrapper {
   height: 59.09%;
 }
 
+.form-description p span {
+  font-weight: 500;
+  color:white;
+}
 
-
-.form {
-  padding: 24px;
+#userform {
+  margin: 24px 24px 68px 24px;
   width:100%;
+}
+
+form {
+  padding: 24px;
+  width: 100%;
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -196,28 +216,40 @@ aside .content-wrapper {
 }
 
 
-.form label {
+.input-field {
+  display: flex;
+  width: 100%;
   margin-bottom: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 19.41px;
-  border: solid #dedede 1px;
-  vertical-align: top;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #3d3b48;
-  font-size: 0.875em;
-  font-weight: 600;
+  border: 1px solid #DEDEDE;
+  justify-content: space-between;
+
 }
 
-input {
+.input-field input {
   text-align: left;
   font-size: .9375em;
-  line-height: 1.625em;
-  font-weight: 400;
-  font-size: .6875em
+  line-height: 1.6em;
+  font-weight: 600;
+  border: none;
+  padding: 15px 0 15px 19.41px;
 }
 
+.input-field img {
+  height: 24px;
+  width: 24px;
+}
+
+
+
+span {
+  text-align: right;
+  color:#FF7979;
+  margin-top:0;
+
+}
+
+
+/* button */
 .submit {
   margin-bottom: 8px;
     background-color: #38CC8B;
@@ -230,34 +262,17 @@ input {
     padding: 15px 45px;
     font-size: 0.9375em;
     line-height: 1.734em;
+    cursor: pointer;
   }
+
+
 
 .submit:hover {
   background-color: #77E2B3;
 }
 
-.message {
-  text-align: right;
-  color: red;
-  font-weight: 500;
-  font-size: .6875em;
-}
 
-  
-.hide {
-  display:none;
-}
-
-
-
-/* button */
-
-
-
-
-
-
-.terms-conditions p{
+.terms-services p{
   font-size: .6875em;
   color: #BAB7D4;
   line-height: 1.76em;
@@ -265,28 +280,28 @@ input {
   margin: 0;
   padding: 0 24px;
   height: 42px;
-  
+
 }
 
-.terms-conditions p span {
+.terms-services p span {
   color: #FF7979;
   font-weight:700;
- 
-  
+
+
 }
 
 /***************FOOTER STYLES***************/
 footer {
-  flex-direction: column;
+
   text-align: center;
-  margin: 16px 0;
+
 }
 
 footer p {
   margin: 0;
   font-size: 0.75em;
   line-height: 1.5em;
-  
+
 }
 
 /* ==========================================================================
@@ -301,7 +316,7 @@ footer p {
  [hidden] {
    display: none !important;
  }
- 
+
  /*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
@@ -310,7 +325,7 @@ footer p {
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
- 
+
  .sr-only {
    border: 0;
    clip: rect(0, 0, 0, 0);
@@ -323,13 +338,13 @@ footer p {
    width: 1px;
    /* 1 */
  }
- 
+
  /*
   * Extends the .sr-only class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
- 
+
  .sr-only.focusable:active,
  .sr-only.focusable:focus {
    clip: auto;
@@ -340,15 +355,15 @@ footer p {
    white-space: inherit;
    width: auto;
  }
- 
+
  /*
   * Hide visually and from screen readers, but maintain layout
   */
- 
+
  .invisible {
    visibility: hidden;
  }
- 
+
  /*
   * Clearfix: contain floats
   *
@@ -360,23 +375,23 @@ footer p {
   * 2. The use of `table` rather than `block` is only necessary if using
   *    `:before` to contain the top-margins of child elements.
   */
- 
+
  .clearfix::before,
  .clearfix::after {
    content: " ";
    display: table;
  }
- 
+
  .clearfix::after {
    clear: both;
  }
- 
+
  /* ==========================================================================
     EXAMPLE Media Queries for Responsive Design.
     These examples override the primary ('mobile first') styles.
     Modify as content requires.
     ========================================================================== */
- 
+
  @media only screen and (min-width: 768px) {
    /* Style adjustments for viewports that meet the condition */
  /* Tablet Styles Here */
@@ -390,7 +405,7 @@ footer p {
   /************ DESKTOP STYLES HERE *************/
 
 body {
-  
+
   background: #FF7979 url('/images/bg-intro-desktop.png');
 }
 
@@ -399,21 +414,20 @@ body {
 
   /************** GENERAL STYLES *************/
 
-
+.content-wrapper {
+  align-items:center;
+}
 
 /************* MAIN STYLES *************/
 
-.content-wrapper {
-  
-  margin:0;
-}
+
 
 
 .hero-area {
   width: 36.459%;
   text-align:left;
   height: auto;
- margin-right:45px;
+  margin-right:45px;
 }
 
 .hero-area .content-wrapper {
@@ -424,7 +438,7 @@ body {
 .hero-area h2 {
   font-size: 3.125em;
   line-height:3.929rem;
-height: 59.38%;
+  height: 59.38%;
   font-weight: 700;
   vertical-align: top;
 
@@ -442,35 +456,39 @@ height: 59.38%;
 
 
 
-aside {
+.form-wrapper {
   width:37.5%;
   margin: 121px 0;
- 
-  
-}
-
-aside .content-wrapper {
   padding:0;
-}
 
-aside .form {
-  padding: 40px;
+
 }
 
 
 .form-description p {
-  margin: 17px 110px;
+  padding: 17px 0;
+  font-size: 0.9em;
 }
 
 .form-description p span {
   font-weight: 500;
 }
 
-aside .form input[type = "text" i] {
-  padding-left: 32px;
+#userform {
+  padding:40px;
 }
 
-.terms-conditions {
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  line-height: 1.6em;
+  padding: 15px 0 15px 32px;
+}
+
+
+.terms-services {
   padding:0;
   height:26px;
 }
@@ -479,7 +497,5 @@ aside .form input[type = "text" i] {
 footer {
   display: block;
 }
-  
-}
 
-  
+}

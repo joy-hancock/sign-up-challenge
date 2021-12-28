@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  
+
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,72 +16,84 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
- 
+
 </head>
 
 <body>
-  
-<main> 
+
+<main>
   <div class="content-wrapper">
 <!-- Hero Area -->
   <section class="hero-area">
     <div class="content-wrapper">
       <h2>Learn to code by watching others</h2>
 
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
       but understanding how developers think is invaluable. </p>
   </section>
 
 <!-- Form -->
 
-  <aside>
-    
-    <div class="content-wrapper">
-     
+
+
+    <div class="form-wrapper">
+
       <div class="form-description">
         <p> <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
-      </div> 
-      
-      
-      <form name="userForm" onsubmit="return validateForm()" method="post">
-       <div class="form-field">
-          <input type = "text" name="firstname" placeholder = "First Name">   
-          <div class="error" id="firstErr"></div>
-        </div>
-        <div class="form-field">
-          <input type = "text" name = "lastname" placeholder="Last Name"> 
-          <div class="error" id="lastErr"></div>
-        </div>
-        <div class="form-field">
-          <input type = "text" name="email" placeholder="Email"> 
-          <div class="error" id="emailErr"></div>
-        </div>
-        <div class="form-field">
-          <input type = "text" name="password" placeholder= "Password">
-          <div class="error" id="passwordErr"></div>
-        </div>
-        <div class="form-field">
-          <input type ="submit" value = "submit">
-        </div>
-       </form>
-    </div>
- <!-- Aside content wrapper ends -->
-</aside>
+      </div>
 
+      <form id="userform">
+      <div class="input-field">
+        <input type="text" id="firstname" placeholder="First Name"/>
+        <img  src="images/icon-error.svg" id="error" class="hide"/>
+      </div>
+      <span id="firstmessage"></span>
+
+
+      <div class="input-field">
+         <input type="text" id="lastname"    placeholder="Last Name" />
+         <img  src="images/icon-error.svg" id="last-error" class="hide"/>
+        </div>
+        <span id="lastmessage"></span>
+
+
+      <div class="input-field">
+        <label hidden>Email Address</label>
+        <input type="email" id="email" placeholder="Email Address">
+        <img  src="images/icon-error.svg" id="email-error" class="hide"/>
+      </div>
+        <span id="emailmessage"></span>
+
+
+      <div class="input-field">
+        <label hidden>Password</label>
+        <input type="text" id="password" placeholder="Password">
+        <img  src="images/icon-error.svg" id="password-error" class="hide"/>
+      </div>
+        <span id="passwordmessage"> </span>
+
+        <button type="button" class="submit" onClick="validateForm()">Submit</button>
+
+      <div class ="terms-services">
+        <p>By clicking the button you are agreeing to our <span>Terms and Services</span></p>
+      </div>
+
+  </form>
+  </div>
 </main>
 
 <!-- Footer Area -->
-  
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br> 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br>
       Coded by <a href="#">Joy Hancock</a>
     </p>
   </footer>
 
-   
- 
+
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -95,4 +107,3 @@
 </body>
 
 </html>
-
