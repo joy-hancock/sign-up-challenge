@@ -232,17 +232,16 @@ input email:invalid {
   width: 24px;
 }
 
-#firstmessage,
-#lastmessage,
-#emailmessage,
-#passwordmessage {
+span[id*="message"] {
   color:#FF7979;
   display:flex;
   font-size: 0.702em;
   font-weight: 500;
   justify-content:flex-end;
   line-height: 1.51em;
+  margin-top: 5px;
 }
+
 
 /* button */
 .button-wrapper {
@@ -290,6 +289,8 @@ input email:invalid {
   color: #FF7979;
   font-weight:700;
 }
+
+
 
 /***************FOOTER STYLES***************/
 
@@ -391,11 +392,42 @@ footer p {
     Modify as content requires.
     ========================================================================== */
 
- @media only screen and (min-width: 768px) {
+ @media only screen and (min-width: 540px) {
    /* Style adjustments for viewports that meet the condition */
  /* Tablet Styles Here */
 
+.content-wrapper {
+  align-items: center;
+  margin-top: 50px;
+}
 
+.hero-area {
+  max-width: 540px;
+  width: 40%;
+}
+
+.hero-area h1{
+  font-size: 2em;
+}
+
+.form-wrapper {
+  width: 50%;
+  margin: 24px;
+}
+
+.form-description {
+  margin: 24px 24px 0px 24px;
+}
+
+.form-description p {
+  padding: 7.5px;
+  margin: 10px;
+  font-size: .75em;
+}
+
+#userform {
+  margin: 24px;
+}
 
  }
 
