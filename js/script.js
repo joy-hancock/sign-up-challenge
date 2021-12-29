@@ -19,7 +19,7 @@ function validateForm() {
     if (firstName == null || firstName == "") {
         document.getElementById("error").style.display = "inline";
         firstMessage.innerHTML = "<em>First name cannot be empty</em>";
-        firstMessage.style.marginTop = "6px";
+        firstMessage.style.marginTop = "5px";
         border.style.borderColor = "#FF7979";
         document.getElementById("firstname").placeholder = "";
         return false;
@@ -32,7 +32,7 @@ function validateForm() {
     if (lastName == null || lastName == "") {
         document.getElementById("last-error").style.display = "inline";
         lastMessage.innerHTML = "<em>Last name cannot be empty</em>";
-        lastMessage.style.marginTop = "6px";
+        lastMessage.style.marginTop = "5px";
         lastnameBorder.style.borderColor = "#FF7979";
         document.getElementById("lastname").placeholder = "";
         return false;
@@ -45,7 +45,7 @@ function validateForm() {
     if (email == null || email == "") {
         document.getElementById("email-error").style.display = "inline";
         emailMessage.innerHTML = "<em>Email cannot be empty</em>";
-        emailMessage.style.marginTop = "6px";
+        emailMessage.style.marginTop = "5px";
         emailBorder.style.borderColor = "#FF7979";
         document.getElementById("email").placeholder = "";
         return false;
@@ -57,7 +57,7 @@ function validateForm() {
     } else {
         document.getElementById("email-error").style.display= "inline";
         emailMessage.innerHTML = "<em>Looks like this is not an email</em>";
-        emailMessage.style.marginTop = "6px";
+        emailMessage.style.marginTop = "5px";
         emailBorder.style.borderColor = "#FF7979";
         document.getElementById("email").placeholder = "";
         document.getElementById("email").style.color = "#FF7979";
@@ -71,7 +71,7 @@ function validateForm() {
   if (password == null || password == "") {
       document.getElementById("password-error").style.display = "inline";
       passwordMessage.innerHTML = "<em>Password cannot be empty</em>";
-      passwordMessage.style.marginTop = "6px";
+      passwordMessage.style.marginTop = "5px";
       passwordBorder.style.borderColor = "#FF7979";
       document.getElementById("password").placeholder = "";
       return false;
