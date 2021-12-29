@@ -99,7 +99,7 @@ html {
 }
 
 body {
-  background: #FF7979 url('/images/bg-intro-mobile.png') top;
+  background: #FF7979 url('/images/backmobile.PNG') top;
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
@@ -404,7 +404,7 @@ footer p {
   /************ DESKTOP STYLES HERE *************/
 
 body {
-  background: #FF7979 url('/images/bg-intro-desktop.png');
+  background: #FF7979 url('/images/backdesktop.PNG');
 }
 
   /************** GENERAL STYLES *************/
