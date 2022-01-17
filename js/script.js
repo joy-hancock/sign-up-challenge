@@ -23,7 +23,6 @@ function validateForm() {
         firstName.placeholder = "";
         return false;
     }
-    validateFirst();
   }
 
   function validateLast() {
@@ -33,7 +32,7 @@ function validateForm() {
         document.getElementById("last-error").style.display = "inline";
         lastMessage.innerHTML = "<em>Last name cannot be empty</em>";
         lastnameBorder.style.borderColor = "#FF7979";
-        lastName.placeholder = "";
+        document.getElementById("lastname").placeholder = "";
         return false;
     }
   }
