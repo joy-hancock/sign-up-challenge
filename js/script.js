@@ -20,9 +20,10 @@ function validateForm() {
         document.getElementById("error").style.display = "inline";
         firstMessage.innerHTML = "<em>First name cannot be empty</em>";
         border.style.borderColor = "#FF7979";
-        document.getElementById("firstname").placeholder = "";
+        firstName.placeholder = "";
         return false;
     }
+    validateFirst();
   }
 
   function validateLast() {
@@ -32,7 +33,7 @@ function validateForm() {
         document.getElementById("last-error").style.display = "inline";
         lastMessage.innerHTML = "<em>Last name cannot be empty</em>";
         lastnameBorder.style.borderColor = "#FF7979";
-        document.getElementById("lastname").placeholder = "";
+        lastName.placeholder = "";
         return false;
     }
   }
